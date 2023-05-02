@@ -15,7 +15,7 @@ export default function App() {
             className="colorGeneratorBox colorGeneratorBoxTransition"
             style={{ backgroundColor: newColor }}
           >
-            Generated Color:
+            Generated Color: {newColor}
             <p className="newColor">{newColor.toUpperCase()}</p>
           </div>
           <p className="newColor newTitle">{colorName}</p>
