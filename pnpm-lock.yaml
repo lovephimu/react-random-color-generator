@@ -13,6 +13,9 @@ dependencies:
   '@upleveled/react-scripts':
     specifier: 5.0.4
     version: 5.0.4(@babel/plugin-syntax-flow@7.21.4)(@babel/plugin-transform-react-jsx@7.21.5)(eslint-import-resolver-typescript@3.5.5)(react@18.2.0)(typescript@5.0.4)
+  hex-color-to-color-name:
+    specifier: ^1.0.2
+    version: 1.0.2
   randomcolor:
     specifier: ^0.6.2
     version: 0.6.2
@@ -5512,6 +5515,10 @@ packages:
   /he@1.2.0:
     resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
+    dev: false
+
+  /hex-color-to-color-name@1.0.2:
+    resolution: {integrity: sha512-YKPBFTSbYIHH8YKcJB4Q5PV+Tr+kvDXpV60BcPMUu5CSZUcc/qOOx7lkr7luk6MSXKd5A82yfPGZTgedIdQ+aA==}
     dev: false
 
   /hoopy@0.1.4:

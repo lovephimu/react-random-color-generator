@@ -1,8 +1,10 @@
+import { GetColorName } from 'hex-color-to-color-name';
 import randomColor from 'randomcolor'; // import the script
 import React, { useState } from 'react';
 
 export default function App() {
   const [newColor, setNewColor] = useState(randomColor());
+  const colorName = GetColorName(newColor);
 
   return (
     <>
@@ -16,6 +18,7 @@ export default function App() {
             Generated Color:
             <p className="newColor">{newColor.toUpperCase()}</p>
           </div>
+          <p className="newColor newTitle">{colorName}</p>
           <button className="button" onClick={() => setNewColor(randomColor())}>
             Generate
           </button>
@@ -24,6 +27,10 @@ export default function App() {
           </div>
         </div>
       </div>
+      <pre className="basic">
+        This is meant to resemble the appearance of popular{' '}
+        <a href="https://www.pantone.com/pantone-postcards">Pantone cards.</a>
+      </pre>
     </>
   );
 }

@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
+a {
+  color: #8f8f8f;
+  transition: color 0.5s ease;
+}
+
+a:hover {
+  color: white;
+}
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
@@ -30,7 +39,7 @@ code {
 
 .colorCard {
   box-shadow: 0px 0px 50px 15px #00000053;
-  padding: 7px 7px 50px 7px;
+  padding: 7px 7px 15px 7px;
   background-color: #ffffff;
   border-radius: 2px;
 }
@@ -38,8 +47,8 @@ code {
 .colorGeneratorBox {
   box-sizing: border-box;
   background-color: #7e7e7e;
-  width: 300px;
-  height: 300px;
+  width: 350px;
+  height: 350px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -50,9 +59,13 @@ code {
   font-size: 35px;
 }
 
+.newTitle {
+  margin: 10px 5px;
+}
+
 .button {
   margin: 10px 3px;
-  font-size: 25px;
+  font-size: 16px;
   padding: 12px 15px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -62,4 +75,10 @@ code {
   font-size: 12px;
   color: #353535;
   margin: 5px;
+}
+
+.basic {
+  text-align: center;
+  margin: 60px;
+  color: #8f8f8f;
 }
