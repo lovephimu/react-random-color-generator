@@ -82,3 +82,10 @@ code {
   margin: 60px;
   color: #8f8f8f;
 }
+
+/* this takes care of the color transition */
+/* it's always connected to the jsx element but once the new Color state changes so does the background color and THAT triggers the transition! */
+
+.colorGeneratorBoxTransition {
+  transition: background-color 0.5s ease-in-out;
+}

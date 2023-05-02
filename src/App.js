@@ -12,7 +12,7 @@ export default function App() {
       <div className="wrapper">
         <div className="colorCard">
           <div
-            className="colorGeneratorBox"
+            className="colorGeneratorBox colorGeneratorBoxTransition"
             style={{ backgroundColor: newColor }}
           >
             Generated Color:
