@@ -16,7 +16,7 @@ export default function App() {
             style={{ backgroundColor: newColor }}
           >
             Generated Color: {newColor}
-            <p className="newColor">{newColor.toUpperCase()}</p>
+            {/* <p className="newColor">{newColor.toUpperCase()}</p> */}
           </div>
           <p className="newColor newTitle">{colorName}</p>
           <button className="button" onClick={() => setNewColor(randomColor())}>
