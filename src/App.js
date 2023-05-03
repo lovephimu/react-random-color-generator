@@ -4,7 +4,18 @@ import React, { useState } from 'react';
 
 export default function App() {
   const [newColor, setNewColor] = useState(randomColor());
+  const [hue, setHue] = useState('');
+  const [lumen, setLumen] = useState('');
   const colorName = GetColorName(newColor);
+
+  function findColor(hueInput, luminosityInput) {
+    setNewColor(
+      randomColor({
+        luminosity: luminosityInput,
+        hue: hueInput,
+      }),
+    );
+  }
 
   return (
     <>
@@ -28,9 +39,51 @@ export default function App() {
         </div>
       </div>
       <pre className="basic">
-        This is meant to resemble the appearance of popular{' '}
-        <a href="https://www.pantone.com/pantone-postcards">Pantone cards.</a>
+        <p>
+          This is meant to resemble the appearance of popular{' '}
+          <a href="https://www.pantone.com/pantone-postcards">Pantone cards.</a>
+        </p>
+        <p>
+          You can also type hues and color luminosity and search for a color
+          here:
+        </p>
       </pre>
+
+      {/* Input fields */}
+      <h2 className="title">
+        Need a specific color tone?
+        <br />
+        <br /> Find your color here!
+      </h2>
+      <div className="basic">
+        <label htmlFor="hue">
+          <pre>Hue</pre>
+        </label>
+        <input
+          id="hue"
+          placeholder="Hue (Blue, etc...)"
+          value={hue}
+          onChange={(event) => setHue(event.currentTarget.value)}
+        />
+        <label htmlFor="luminosity">
+          <pre>Luminosity</pre>
+        </label>
+        <input
+          id="luminosity"
+          placeholder="Luminosity (bright, dark, etc...)"
+          value={lumen}
+          onChange={(event) => setLumen(event.currentTarget.value)}
+        />
+        <p />
+        <button
+          className="extraButton"
+          onClick={() => {
+            findColor(hue, lumen);
+          }}
+        >
+          Submit
+        </button>
+      </div>
     </>
   );
 }

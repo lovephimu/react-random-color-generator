@@ -89,3 +89,30 @@ code {
 .colorGeneratorBoxTransition {
   transition: background-color 0.5s ease-in-out;
 }
+
+input {
+  background: none;
+  border: 1px dotted #8f8f8f;
+  color: #8f8f8f;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 350px;
+  box-sizing: border-box;
+  outline: none; /* remove the default focus outline or maybe not*/
+}
+
+.extraButton {
+  background: #8f8f8f4e;
+  border: 1px dotted #8f8f8f;
+  color: #8f8f8f;
+  font-size: 1em;
+  padding: 0.5em;
+  width: 350px;
+  box-sizing: border-box;
+  outline: none; /* remove the default focus outline or maybe not*/
+  transition: background-color 0.15s ease-in-out;
+}
+
+.extraButton:hover {
+  background: #8f8f8f26;
+}
