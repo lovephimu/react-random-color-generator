@@ -1,3 +1,20 @@
+# React Random Color Generator
+
+Feel uninspired? Don't know how to paint your house, your living room or your nails?
+This random color generator guides you through all the wonderful possible colors.
+
+## How does it work?
+
+Simple! Just click the generate Button. The powerful randomcolor package will compute a color for you!
+Don't like it? Just click generate again!
+On top of that this website makes use of cutting edge science by deploying on a color translator made by MIT. This beautiful npm package translates hexcode into human-readable language. It's what makes the actual inspiration happen in your brain!
+
+In case you don't want to leave the color picking in the hands of a random color generator you can use the inputs further below to suggest hue and luminosity. The generator will then vaguely follow your instructions and surprise you with colors you would have never thought existed in the first place!
+
+## Behind the scenes
+
+The random color package updates react states and the hexcode to color name package on button click. Those states are either updated by buttons or by user input. Once updated the fresh states manipulate the css background property to trigger a color transition from the old color to the new one.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
